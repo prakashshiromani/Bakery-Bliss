@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Bliss | Artisan Baked Goods, Daily</title>
+    <meta name="description"
+        content="Experience the finest handcrafted pastries, breads, and cakes at Bakery Bliss. Made fresh every morning with premium ingredients and pure love.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 3C16 3 6 9 6 17C6 22.5 10.5 27 16 27C21.5 27 26 22.5 26 17C26 9 16 3 16 3Z"
+                        fill="#C8922A" opacity="0.2" />
+                    <path d="M16 3C16 3 6 9 6 17C6 22.5 10.5 27 16 27C21.5 27 26 22.5 26 17C26 9 16 3 16 3Z"
+                        stroke="#C8922A" stroke-width="1.5" fill="none" />
+                    <circle cx="16" cy="17" r="4" fill="#C8922A" />
+                    <path d="M12 10 Q16 6 20 10" stroke="#C8922A" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <span class="logo-text">Bakery Bliss</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="#story">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions" style="display: flex; gap: 12px;">
+            <a href="login.html" class="btn btn-ghost" id="login-btn">Login</a>
+            <a href="menu.html" class="btn btn-outline" id="order-btn">Order Online</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+            <a href="login.html" class="btn btn-outline" style="font-size: 1rem;">Login</a>
+            <a href="menu.html" class="btn btn-primary" style="font-size: 1rem;">Order Online</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Est. 2018 · Artisan Patisserie</p>
+            <h1 class="hero-title">Where Every Bite<br><em>Tells a Story.</em></h1>
+            <p class="hero-subtitle">Handcrafted with the finest ingredients, baked fresh every morning, delivered
+                straight to your heart.</p>
+            <div class="hero-cta-group">
+                <a href="menu.html" class="btn btn-primary btn-large" id="explore-menu-btn">Explore Our Menu</a>
+                <a href="#story" class="btn btn-ghost btn-large">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-video-frame">
+                <video autoplay loop muted playsinline class="hero-video" id="hero-video">
+                    <source src="hero video/video hero.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay-badge">
+                    <span class="badge-icon">✦</span>
+                    <span>Fresh Daily</span>
+                </div>
+            </div>
+            <div class="hero-float-card">
+                <div class="float-card-icon">🥐</div>
+                <div>
+                    <p class="float-card-label">Today's Special</p>
+                    <p class="float-card-title">Almond Croissant</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-dot"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-inner">
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Signature Recipes</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">12K+</span>
+                <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Natural Ingredients</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Years of Artistry</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Features -->
+    <section class="features" id="about">
+        <div class="section-header">
+            <p class="section-eyebrow">Why Choose Us</p>
+            <h2 class="section-title">Crafted with<br>Intention & Love</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌾</div>
+                <h3>Premium Ingredients</h3>
+                <p>We source only the finest flour, butter, and seasonal produce from local farms. No shortcuts, ever.
+                </p>
+            </div>
+            <div class="feature-card feature-card--highlight">
+                <div class="feature-icon">🔥</div>
+                <h3>Stone-Oven Baked</h3>
+                <p>Our artisan stone ovens reach the perfect temperature to give your bread and pastry that unmistakable
+                    golden crust.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Fresh Delivery</h3>
+                <p>Order before 8 AM and enjoy same-morning delivery to your doorstep while the bread is still warm.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="story-image-wrap">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop"
+                alt="Artisan baker kneading dough in a rustic bakery" class="story-image">
+            <div class="story-image-badge">
+                <span>Since</span>
+                <span class="badge-year">2018</span>
+            </div>
+        </div>
+        <div class="story-content">
+            <p class="section-eyebrow">Our Story</p>
+            <h2 class="section-title">Born in a<br>Small Kitchen.</h2>
+            <p class="story-text">It started with a grandmother's recipe and a dream. Bakery Bliss was founded in a tiny
+                home kitchen in 2018 with one simple belief — <em>great bread changes your day.</em></p>
+            <p class="story-text">Today, we bake over 1,000 items every morning, but our soul remains the same: every
+                loaf, every pastry, every cake is made by hand, with patience and passion.</p>
+            <a href="menu.html" class="btn btn-primary">Taste Our Story</a>
+        </div>
+    </section>
+
+    <!-- Signature Items Preview -->
+    <section class="signature" id="menu">
+        <div class="section-header">
+            <p class="section-eyebrow">Fan Favourites</p>
+            <h2 class="section-title">Our Most Loved<br>Creations</h2>
+        </div>
+        <div class="signature-grid">
+            <div class="sig-card">
+                <div class="sig-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop"
+                        alt="Artisan Sourdough Bread" loading="lazy">
+                    <span class="sig-badge">Bestseller</span>
+                </div>
+                <div class="sig-card-body">
+                    <h3>Country Sourdough</h3>
+                    <p>72-hour fermented wild yeast loaf with a crispy crust</p>
+                    <div class="sig-footer">
+                        <span class="sig-price">₹ 280</span>
+                        <a href="menu.html" class="btn btn-sm btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sig-card">
+                <div class="sig-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=600&auto=format&fit=crop"
+                        alt="French Croissant" loading="lazy">
+                    <span class="sig-badge sig-badge--new">New</span>
+                </div>
+                <div class="sig-card-body">
+                    <h3>Almond Croissant</h3>
+                    <p>Buttery, flaky layers with a rich almond cream filling</p>
+                    <div class="sig-footer">
+                        <span class="sig-price">₹ 220</span>
+                        <a href="menu.html" class="btn btn-sm btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sig-card">
+                <div class="sig-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop"
+                        alt="Chocolate Celebration Cake" loading="lazy">
+                </div>
+                <div class="sig-card-body">
+                    <h3>Dark Chocolate Gateau</h3>
+                    <p>Velvety Belgian chocolate layers, ganache & gold dust</p>
+                    <div class="sig-footer">
+                        <span class="sig-price">₹ 1,800</span>
+                        <a href="menu.html" class="btn btn-sm btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="signature-cta">
+            <a href="menu.html" class="btn btn-outline btn-large">View Full Menu &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <p class="section-eyebrow">Loved by Many</p>
+            <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-quote">"The sourdough here is unlike anything I've had in the city. It takes me straight
+                    to a Parisian bakery every single time."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">P</div>
+                    <div>
+                        <p class="testi-name">Priya Sharma</p>
+                        <p class="testi-role">Food Blogger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card testi-card--featured">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-quote">"I ordered the celebration cake for my daughter's birthday and the entire family
+                    was speechless. The most beautiful, delicious cake we've ever tasted."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">R</div>
+                    <div>
+                        <p class="testi-name">Rahul Mehta</p>
+                        <p class="testi-role">Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-quote">"Fresh delivery before 9 AM, still warm pastries, incredible quality. Bakery
+                    Bliss has completely changed my morning routine."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">A</div>
+                    <div>
+                        <p class="testi-name">Ananya Iyer</p>
+                        <p class="testi-role">Loyal Member</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Banner -->
+    <section class="cta-banner" id="contact">
+        <div class="cta-content">
+            <p class="section-eyebrow" style="color: var(--gold-light);">Start Your Morning Right</p>
+            <h2 class="cta-title">Ready to Taste<br>the Difference?</h2>
+            <p class="cta-subtitle">Order online for pick-up or delivery, or visit us at our bakery — we'd love to see
+                you.</p>
+            <div class="cta-actions">
+                <a href="menu.html" class="btn btn-gold btn-large">Order Now</a>
+                <div class="cta-info">
+                    <span>📍 12, Lakeview Road, Bengaluru</span>
+                    <span>🕗 Open 7 AM – 8 PM Daily</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text">Bakery Bliss</span>
+                <p>Baking happiness since 2018, one loaf at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#about">About Us</a>
+                <a href="menu.html">Our Menu</a>
+                <a href="#story">Our Story</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="#">Allergen Info</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Bakery Bliss. All rights reserved. Made with 🧡 in Bengaluru.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll-aware navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            mobileBtn.classList.toggle('active');
+        });
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                mobileBtn.classList.remove('active');
+            });
+        });
+
+        // Simple fade-in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .sig-card, .testi-card, .story-content, .story-image-wrap').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Ensure page loads at the top
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script>
+</body>
+
+</html>

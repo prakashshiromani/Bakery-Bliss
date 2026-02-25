@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Bakery Bliss</title>
+    <meta name="description" content="Sign in to your Bakery Bliss account.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 3C16 3 6 9 6 17C6 22.5 10.5 27 16 27C21.5 27 26 22.5 26 17C26 9 16 3 16 3Z"
+                        fill="#C8922A" opacity="0.2" />
+                    <path d="M16 3C16 3 6 9 6 17C6 22.5 10.5 27 16 27C21.5 27 26 22.5 26 17C26 9 16 3 16 3Z"
+                        stroke="#C8922A" stroke-width="1.5" fill="none" />
+                    <circle cx="16" cy="17" r="4" fill="#C8922A" />
+                    <path d="M12 10 Q16 6 20 10" stroke="#C8922A" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <a href="index.html" class="logo-text">Bakery Bliss</a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html#story">Our Story</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions" style="display: flex; gap: 12px; align-items: center;">
+            <a href="login.html" class="btn btn-ghost" id="login-btn" style="padding: 10px 20px;">Login</a>
+            <a href="menu.html" class="btn btn-primary" id="order-btn" style="padding: 10px 20px;">Order Online</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#contact">Contact</a>
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+            <a href="login.html" class="btn btn-outline" style="font-size: 1rem;">Login</a>
+            <a href="menu.html" class="btn btn-primary" style="font-size: 1rem;">Order Online</a>
+        </div>
+    </div>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="auth-card">
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-subtitle">Sign in to access your treats and orders.</p>
+
+            <form class="auth-form" action="#" method="POST"
+                onsubmit="event.preventDefault(); alert('Login functionality coming soon!');">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="auth-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+            </form>
+
+            <p class="auth-footer">Don't have an account? <a href="signup.html">Create one</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text">Bakery Bliss</span>
+                <p>Baking happiness since 2018, one loaf at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="menu.html">Our Menu</a>
+                <a href="index.html#story">Our Story</a>
+            </div>
+            <div class="footer-links">
+                <h4>Visit Us</h4>
+                <a href="#">📍 12, Lakeview Road, Bengaluru</a>
+                <a href="#">🕗 7 AM – 8 PM Daily</a>
+                <a href="#">📞 +91 98765 43210</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Bakery Bliss. All rights reserved. Made with 🧡 in Bengaluru.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            mobileBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Bakery Bliss</title>
+    <meta name="description"
+        content="Browse our full menu of artisan breads, pastries, cakes, beverages, and seasonal specials. Order online for delivery or pick-up.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="menu-page">
+
+    <!-- Navigation -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 3C16 3 6 9 6 17C6 22.5 10.5 27 16 27C21.5 27 26 22.5 26 17C26 9 16 3 16 3Z"
+                        fill="#C8922A" opacity="0.2" />
+                    <path d="M16 3C16 3 6 9 6 17C6 22.5 10.5 27 16 27C21.5 27 26 22.5 26 17C26 9 16 3 16 3Z"
+                        stroke="#C8922A" stroke-width="1.5" fill="none" />
+                    <circle cx="16" cy="17" r="4" fill="#C8922A" />
+                    <path d="M12 10 Q16 6 20 10" stroke="#C8922A" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <span class="logo-text">Bakery Bliss</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="index.html#story">Our Story</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions" style="display: flex; gap: 12px; align-items: center;">
+            <a href="login.html" class="btn btn-ghost" id="login-btn" style="padding: 10px 20px;">Login</a>
+            <a href="#" class="btn btn-primary" id="cart-btn" style="padding: 10px 20px;">🛒 Cart <span
+                    class="cart-count" id="cart-count">0</span></a>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#contact">Contact</a>
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+            <a href="login.html" class="btn btn-outline" style="font-size: 1rem;">Login</a>
+            <a href="menu.html" class="btn btn-primary" style="font-size: 1rem;">Order Online</a>
+        </div>
+    </div>
+
+    <!-- Menu Page Hero -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <p class="section-eyebrow">Crafted Fresh Daily</p>
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-subtitle">From morning pastries to celebration cakes — every bite, a masterpiece.</p>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <div class="menu-tabs-wrapper">
+        <div class="menu-tabs" id="menu-tabs">
+            <button class="menu-tab active" data-category="all" id="tab-all">All</button>
+            <button class="menu-tab" data-category="breads" id="tab-breads">🍞 Breads</button>
+            <button class="menu-tab" data-category="pastries" id="tab-pastries">🥐 Pastries</button>
+            <button class="menu-tab" data-category="cakes" id="tab-cakes">🎂 Cakes</button>
+            <button class="menu-tab" data-category="beverages" id="tab-beverages">☕ Beverages</button>
+            <button class="menu-tab" data-category="seasonal" id="tab-seasonal">✨ Seasonal</button>
+        </div>
+    </div>
+
+    <!-- Menu Grid -->
+    <section class="menu-section">
+        <div class="menu-grid" id="menu-grid">
+
+            <!-- Breads -->
+            <div class="menu-card" data-category="breads">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop"
+                        alt="Country Sourdough" loading="lazy">
+                    <span class="menu-badge bestseller">Bestseller</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Country Sourdough</h3>
+                        <span class="menu-tag">Breads</span>
+                    </div>
+                    <p>72-hour fermented wild yeast loaf with a crispy, golden crust and a perfectly chewy interior.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 280</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Country Sourdough"
+                            data-price="280">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="breads">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop"
+                        alt="Multigrain Loaf" loading="lazy">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Multigrain Loaf</h3>
+                        <span class="menu-tag">Breads</span>
+                    </div>
+                    <p>Packed with sunflower seeds, oats, and flaxseeds. Hearty, healthy and utterly delicious.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 310</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Multigrain Loaf"
+                            data-price="310">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="breads">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?q=80&w=600&auto=format&fit=crop"
+                        alt="Rosemary Focaccia" loading="lazy">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Rosemary Focaccia</h3>
+                        <span class="menu-tag">Breads</span>
+                    </div>
+                    <p>Soft, pillowy Italian flatbread drizzled with extra-virgin olive oil and fresh rosemary.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 240</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Rosemary Focaccia"
+                            data-price="240">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastries -->
+            <div class="menu-card" data-category="pastries">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=600&auto=format&fit=crop"
+                        alt="Almond Croissant" loading="lazy">
+                    <span class="menu-badge new">New</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Almond Croissant</h3>
+                        <span class="menu-tag">Pastries</span>
+                    </div>
+                    <p>Buttery, flaky laminated dough filled with rich almond cream and toasted flaked almonds.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 220</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Almond Croissant"
+                            data-price="220">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="pastries">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=600&auto=format&fit=crop"
+                        alt="Glazed Donuts" loading="lazy">
+                    <span class="menu-badge bestseller">Bestseller</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Artisan Glazed Donuts</h3>
+                        <span class="menu-tag">Pastries</span>
+                    </div>
+                    <p>Pillowy soft, hand-dipped in premium glazes. Available in classic, chocolate, and strawberry
+                        rose.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 180</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Artisan Glazed Donuts"
+                            data-price="180">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="pastries">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600&auto=format&fit=crop"
+                        alt="Cinnamon Roll" loading="lazy">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Cardamom Cinnamon Roll</h3>
+                        <span class="menu-tag">Pastries</span>
+                    </div>
+                    <p>Soft, spiraled rolls spiced with Ceylon cinnamon and cardamom, topped with vanilla cream cheese.
+                    </p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 200</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Cardamom Cinnamon Roll"
+                            data-price="200">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cakes -->
+            <div class="menu-card" data-category="cakes">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop"
+                        alt="Chocolate Gateau Cake" loading="lazy">
+                    <span class="menu-badge premium">Premium</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Dark Chocolate Gateau</h3>
+                        <span class="menu-tag">Cakes</span>
+                    </div>
+                    <p>Velvety Belgian dark chocolate layers, silk ganache, and edible 24-karat gold leaf. Serves 10–12.
+                    </p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 1,800</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Dark Chocolate Gateau"
+                            data-price="1800">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="cakes">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=600&auto=format&fit=crop"
+                        alt="Lemon Drizzle Cake" loading="lazy">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Lemon Drizzle Cake</h3>
+                        <span class="menu-tag">Cakes</span>
+                    </div>
+                    <p>Zesty Amalfi lemon sponge soaked in lemon syrup, topped with crystallised lemon and a tangy
+                        glaze.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 1,200</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Lemon Drizzle Cake"
+                            data-price="1200">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="cakes">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop"
+                        alt="Strawberry Shortcake" loading="lazy">
+                    <span class="menu-badge bestseller">Bestseller</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Strawberry Shortcake</h3>
+                        <span class="menu-tag">Cakes</span>
+                    </div>
+                    <p>Light vanilla sponge, fresh strawberry compote, and Chantilly cream. A timeless classic
+                        reimagined.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 1,400</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Strawberry Shortcake"
+                            data-price="1400">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-card" data-category="beverages">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop"
+                        alt="Artisan Coffee" loading="lazy">
+                    <span class="menu-badge bestseller">Bestseller</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Single Origin Flat White</h3>
+                        <span class="menu-tag">Beverages</span>
+                    </div>
+                    <p>Velvety microfoam milk over double-shot single origin Ethiopian espresso. Rich chocolate notes.
+                    </p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 220</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Single Origin Flat White"
+                            data-price="220">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?q=80&w=600&auto=format&fit=crop"
+                        alt="Matcha Latte" loading="lazy">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Ceremonial Matcha Latte</h3>
+                        <span class="menu-tag">Beverages</span>
+                    </div>
+                    <p>First-flush ceremonial grade Japanese matcha whisked with oat milk. Earthy, smooth and calming.
+                    </p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 280</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Ceremonial Matcha Latte"
+                            data-price="280">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="beverages">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=600&auto=format&fit=crop"
+                        alt="Hot Chocolate" loading="lazy">
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Dark Hot Chocolate</h3>
+                        <span class="menu-tag">Beverages</span>
+                    </div>
+                    <p>Valrhona 70% dark chocolate melted into steamed whole milk, topped with hand-whipped cream.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 260</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Dark Hot Chocolate"
+                            data-price="260">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seasonal -->
+            <div class="menu-card" data-category="seasonal">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=600&auto=format&fit=crop"
+                        alt="Mango Tart" loading="lazy">
+                    <span class="menu-badge seasonal">Seasonal</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Alphonso Mango Tart</h3>
+                        <span class="menu-tag">Seasonal</span>
+                    </div>
+                    <p>Crisp butter pastry shell, vanilla custard cream, and sliced Ratnagiri Alphonso mangoes. Summer
+                        exclusive.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 380</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Alphonso Mango Tart"
+                            data-price="380">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="seasonal">
+                <div class="menu-card-img">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=600&auto=format&fit=crop"
+                        alt="Saffron Pistachio Eclair" loading="lazy">
+                    <span class="menu-badge seasonal">Seasonal</span>
+                </div>
+                <div class="menu-card-body">
+                    <div class="menu-card-header">
+                        <h3>Saffron Pistachio Eclair</h3>
+                        <span class="menu-tag">Seasonal</span>
+                    </div>
+                    <p>Light choux pastry filled with Kashmiri saffron cream and topped with crushed pistachios and
+                        gold.</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">₹ 320</span>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Saffron Pistachio Eclair"
+                            data-price="320">+ Add</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Toast Notification -->
+    <div class="cart-toast" id="cart-toast">
+        <span class="cart-toast-icon">✓</span>
+        <span id="cart-toast-msg">Item added to cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text">Bakery Bliss</span>
+                <p>Baking happiness since 2018, one loaf at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="index.html#about">About Us</a>
+                <a href="menu.html">Our Menu</a>
+                <a href="index.html#story">Our Story</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Visit Us</h4>
+                <a href="#">📍 12, Lakeview Road, Bengaluru</a>
+                <a href="#">🕗 7 AM – 8 PM Daily</a>
+                <a href="#">📞 +91 98765 43210</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Bakery Bliss. All rights reserved. Made with 🧡 in Bengaluru.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.add('scrolled');
+        });
+
+        // Mobile menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            mobileBtn.classList.toggle('active');
+        });
+
+        // Category Filter
+        const tabs = document.querySelectorAll('.menu-tab');
+        const cards = document.querySelectorAll('.menu-card');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const cat = tab.dataset.category;
+                cards.forEach(card => {
+                    if (cat === 'all' || card.dataset.category === cat) {
+                        card.style.display = 'flex';
+                        setTimeout(() => card.classList.add('visible'), 10);
+                    } else {
+                        card.classList.remove('visible');
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to Cart
+        let cartCount = 0;
+        const cartCountEl = document.getElementById('cart-count');
+        const toast = document.getElementById('cart-toast');
+        const toastMsg = document.getElementById('cart-toast-msg');
+
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', () => {
+                cartCount++;
+                cartCountEl.textContent = cartCount;
+                toastMsg.textContent = `${btn.dataset.name} added to cart!`;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2800);
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.menu-card').forEach(el => observer.observe(el));
+
+        // Ensure page loads at the top
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script>
+</body>
+
+</html>
